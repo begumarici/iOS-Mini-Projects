@@ -1,0 +1,13 @@
+DerivedData/
+*.xcworkspace
+xcuserdata/
+*.xcuserstate
+
+.build/
+Packages/
+
+.DS_Store
+
+Pods/
+Podfile.lock
+
