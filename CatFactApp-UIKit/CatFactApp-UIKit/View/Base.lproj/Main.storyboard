@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CatFactApp_UIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kedi bilgisi" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jk-TX-p5u">
+                                <rect key="frame" x="16" y="290" width="361" height="163"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="163" id="zHJ-qB-yuv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bc-A9-3TG">
+                                <rect key="frame" x="108" y="479" width="177" height="50"/>
+                                <color key="backgroundColor" systemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="IkR-Nn-Mm1"/>
+                                </constraints>
+                                <color key="tintColor" red="0.98414070060000003" green="0.80953162649999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="New Fact" cornerStyle="capsule"/>
+                                <connections>
+                                    <action selector="newFactButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pq1-Zu-hWB"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="X8Q-gy-cdX">
+                                <rect key="frame" x="16" y="546" width="361" height="261"/>
+                                <color key="tintColor" red="0.89551946380000003" green="0.590476377" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hXm-hH-uQG">
+                                <rect key="frame" x="16" y="59" width="361" height="215"/>
+                                <color key="tintColor" red="1" green="0.52531078667915332" blue="0.92496898703251229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="214" id="5fR-12-UIK"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.98414070056503022" green="0.8095316265257001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4jk-TX-p5u" firstAttribute="trailing" secondItem="X8Q-gy-cdX" secondAttribute="trailing" id="3NH-pu-1Yj"/>
+                            <constraint firstItem="4jk-TX-p5u" firstAttribute="leading" secondItem="X8Q-gy-cdX" secondAttribute="leading" id="FFm-AH-WXy"/>
+                            <constraint firstItem="hXm-hH-uQG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="0.3333333333333286" id="Gtk-bK-LHI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="X8Q-gy-cdX" secondAttribute="bottom" constant="11.666666666666742" id="JU5-Uu-2lm"/>
+                            <constraint firstItem="hXm-hH-uQG" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="JpJ-AT-TMf"/>
+                            <constraint firstItem="X8Q-gy-cdX" firstAttribute="top" secondItem="4bc-A9-3TG" secondAttribute="bottom" constant="17.333333333333371" id="Mqi-6Q-sjP"/>
+                            <constraint firstItem="hXm-hH-uQG" firstAttribute="trailing" secondItem="4jk-TX-p5u" secondAttribute="trailing" id="YMT-Tl-c7U"/>
+                            <constraint firstItem="4jk-TX-p5u" firstAttribute="centerX" secondItem="4bc-A9-3TG" secondAttribute="centerX" id="aDs-Og-ZWM"/>
+                            <constraint firstItem="hXm-hH-uQG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bVI-RE-6lG"/>
+                            <constraint firstItem="4bc-A9-3TG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="l6h-FE-qhb"/>
+                            <constraint firstItem="4bc-A9-3TG" firstAttribute="top" secondItem="4jk-TX-p5u" secondAttribute="bottom" constant="26" id="rgB-WQ-qfn"/>
+                            <constraint firstItem="4jk-TX-p5u" firstAttribute="top" secondItem="hXm-hH-uQG" secondAttribute="bottom" constant="16.666666666666686" id="yiv-8F-i4p"/>
+                            <constraint firstItem="hXm-hH-uQG" firstAttribute="leading" secondItem="4jk-TX-p5u" secondAttribute="leading" id="zET-uy-gWW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="factLabel" destination="4jk-TX-p5u" id="D7e-0u-k5f"/>
+                        <outlet property="newFactButton" destination="4bc-A9-3TG" id="via-b1-1LR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cat.fill" catalog="system" width="128" height="102"/>
+        <systemColor name="scrollViewTexturedBackgroundColor">
+            <color red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
