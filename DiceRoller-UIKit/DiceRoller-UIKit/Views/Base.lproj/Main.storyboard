@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dice View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DiceViewController" customModule="DiceRoller_UIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4rB-Ua-1qJ">
+                                <rect key="frame" x="71.666666666666686" y="301" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="8mN-To-vfi"/>
+                                    <constraint firstAttribute="width" constant="250" id="bq5-HS-RtP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake your phone for rolling the dice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSd-Zq-qHm">
+                                <rect key="frame" x="16" y="210" width="361" height="20"/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or tap the button!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RPt-nx-REY">
+                                <rect key="frame" x="16" y="592.66666666666663" width="361" height="19.333333333333371"/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DiceRoller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMk-qF-nnA">
+                                <rect key="frame" x="16" y="70" width="361" height="45.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="40"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsx-Ma-NM8">
+                                <rect key="frame" x="150" y="633.66666666666663" width="93" height="34.333333333333371"/>
+                                <color key="backgroundColor" red="1" green="0.84338107569999998" blue="0.71961776200000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Roll"/>
+                                <connections>
+                                    <action selector="rollButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wpw-jo-k00"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gsx-Ma-NM8" firstAttribute="top" secondItem="RPt-nx-REY" secondAttribute="bottom" constant="21.666666666666629" id="4eQ-g9-3uw"/>
+                            <constraint firstItem="lSd-Zq-qHm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="AGq-Dn-KPt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lSd-Zq-qHm" secondAttribute="trailing" constant="16" id="Kub-cL-epF"/>
+                            <constraint firstItem="gsx-Ma-NM8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="NTH-pL-LAa"/>
+                            <constraint firstItem="RPt-nx-REY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OEk-i5-9wr"/>
+                            <constraint firstItem="RMk-qF-nnA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="70" id="OvX-th-HiJ"/>
+                            <constraint firstItem="RMk-qF-nnA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="YE2-bA-71y"/>
+                            <constraint firstItem="4rB-Ua-1qJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eD4-t5-fGz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RPt-nx-REY" secondAttribute="trailing" constant="16" id="g6J-s9-1rG"/>
+                            <constraint firstItem="gsx-Ma-NM8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h0i-pc-KgV"/>
+                            <constraint firstItem="RMk-qF-nnA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hL2-kS-OLC"/>
+                            <constraint firstItem="lSd-Zq-qHm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iPo-gT-DfG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gsx-Ma-NM8" secondAttribute="bottom" constant="116" id="keA-vl-4dR"/>
+                            <constraint firstItem="4rB-Ua-1qJ" firstAttribute="top" secondItem="lSd-Zq-qHm" secondAttribute="bottom" constant="71" id="nCH-gS-bEE"/>
+                            <constraint firstItem="RPt-nx-REY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="nEv-Du-ZT3"/>
+                            <constraint firstItem="4rB-Ua-1qJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vXU-oB-Zg1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gsx-Ma-NM8" secondAttribute="trailing" constant="150" id="vpU-0Q-hWe"/>
+                            <constraint firstAttribute="trailing" secondItem="RMk-qF-nnA" secondAttribute="trailing" constant="16" id="x4O-w1-A5k"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="DiceImageView" destination="4rB-Ua-1qJ" id="Run-me-7AP"/>
+                        <outlet property="rollButton" destination="gsx-Ma-NM8" id="fS2-I5-deR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+</document>
